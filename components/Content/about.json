@@ -1,0 +1,29 @@
+{
+  "metaTitle": "About Us - Citrus Heights Drain Cleaning Pros",
+  "metaDescription": "Trusted drain cleaning experts in Citrus Heights since 1995. We provide reliable, affordable, and professional service with advanced solutions.",
+  "bannerQuote": "",
+  "bannerImage": "banner.jpg",
+  "h1Banner": "Your Trusted Drain Cleaning Experts in Citrus Heights",
+  "p1Banner": "",
+  "p2": "For years, Citrus Heights Drain Cleaning Pros has been the leading name in professional drain cleaning services. We take pride in delivering fast, reliable, and affordable solutions to keep your plumbing system in top condition. Our skilled team is dedicated to ensuring your home or business remains free from stubborn clogs and drainage issues with expert care and advanced technology.",
+  "h2Image": "food-truck-concept-kitchen-utensils-inside-the-ca.jpg",
+  "missionSection": [
+    {
+      "title": "Our Mission",
+      "description": "Our mission is to provide high-quality, effective, and hassle-free drain cleaning solutions while maintaining the highest level of professionalism. We strive to solve drainage problems at the root, ensuring that our customers experience long-term relief from recurring issues."
+    },
+    {
+      "title": "Our Values",
+      "description": "We believe in honesty, reliability, and innovation. Integrity is at the heart of everything we do, which is why we offer upfront pricing with no hidden fees. We are committed to delivering exceptional customer service, ensuring that every client is satisfied with our work."
+    },
+    {
+      "title": "Our Difference",
+      "description": "What sets us apart is our experience, expertise, and customer-first approach. With over 25 years in the industry, we have the knowledge and skills to tackle even the most complex drain problems. Our team is dedicated to providing personalized solutions that meet our client's individual needs."
+    }
+  ],
+  "areaweserveSection": {
+    "description": "We serve all across the Meridian",
+    "linkText": "Check our Fence service locations here.",
+    "link": "/areas-we-serve"
+  }
+}
