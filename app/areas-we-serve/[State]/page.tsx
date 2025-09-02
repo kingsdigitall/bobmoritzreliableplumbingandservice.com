@@ -1,28 +1,15 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import content from "@/components/Content/subDomainUrlContent.json";
-import Link from "next/link";
 import Banner from "@/app/components/Home/Banner";
 import Service from "@/app/components/Home/Service";
 import ContactInfo from "@/components/Content/ContactInfo.json";
-import { Metadata } from "next";
-import ReviewSlider from "@/app/components/ReviewSlider";
-import { FaPhoneSquareAlt } from "react-icons/fa";
-import CtaState from "@/app/components/CtaState";
-import ServiceSlider from "@/app/components/Home/ServiceSlider";
-import CtaWidget from "@/app/components/CtaWidget";
-import ZipAndNeighAccordian from "@/app/components/Home/ZipAndNeighAccordian";
 import Faq from "@/app/components/Home/Faq";
-import CounterCta from "@/app/components/Widgets/CounterCta";
 import HourCta from "@/app/components/Home/HourCta";
-import Guarantees from "@/app/components/Widgets/Guarantees";
 import ReviewWidget from "@/app/components/Widgets/ReviewWidget";
-import data from "@/components/Content/serviceWidgetContent.json";
-import Types from "@/app/components/Widgets/Types";
 import Affordable from "@/app/components/Home/Affordable";
 import ProcessWidget from "@/app/components/Widgets/ProcessWidget";
 import AreaWeServe from "@/app/components/Widgets/AreaWeServe";
-import NavbarState from "@/app/components/State/NavbarState";
 // import Service from "@/app/Components/Service";
 
 interface SubdomainPageProps {
@@ -35,26 +22,11 @@ export function generateMetadata({ params }: SubdomainPageProps) {
   const ContentData = cityData[State];
   return {
     title: ContentData?.metaTitle,
-    description: ContentData?.metaDescription,
+    description: `${ContentData?.metaDescription.replace("Call today!",`Call us at ${ContactInfo.No}`)}.`,
     alternates: {
       canonical: `${ContactInfo.baseUrl}areas-we-serve/${State}/`,
     },
   };
-}
-
-interface CityData {
-  slug: string;
-  bannerText: string;
-  hone: string;
-  pone: string;
-  htwo: string;
-  ptwo: string;
-  hthree: string;
-  pthree: string;
-  hfour: string;
-  pfour: string;
-  history: string[];
-  topSight: { name: string; image: string; description: string }[];
 }
 export default function SubdomainPage({ params }: SubdomainPageProps) {
   // console.log(params)

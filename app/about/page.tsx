@@ -5,7 +5,6 @@ import Banner from "@/app/components/Home/Banner";
 import contentData from "@/components/Content/about.json";
 import ContactInfo from "@/components/Content/ContactInfo.json";
 
-
 export const metadata: Metadata = {
   title: {
     absolute: contentData.metaTitle,
@@ -49,7 +48,9 @@ const page = () => {
               <Image
                 src={`${contentData.h2Image}`}
                 className="rounded-lg border object-cover  shadow-lg "
-                alt={contentData.h2Image.split("/").pop()?.split(".")[0] || "image"}
+                alt={
+                  contentData.h2Image.split("/").pop()?.split(".")[0] || "image"
+                }
                 width={1000}
                 height={1000}
               />
@@ -106,7 +107,7 @@ const page = () => {
           </div>
           <div className="mt-4 border-double text-center">
             <button
-              className={`mt-3 rounded-lg bg-main px-4 py-3 font-bold tracking-wide text-white     shadow-lg hover:bg-minor`}
+              className={`mt-3 rounded-lg bg-main px-4 py-3 font-bold tracking-wide text-white shadow-lg hover:bg-minor`}
             >
               <a id="cta-id" href={`tel:${ContactInfo.tel}`}>
                 {" "}
@@ -115,38 +116,6 @@ const page = () => {
             </button>
           </div>
         </div>
-        {/* -----------------------------------------Conversation End------------------------ */}
-        {/* all */}
-        {/* <div className="md:mx-20 mx-4 my-20">
-          <div className="text-2xl font-bold "><div className="flex justify-center gap-2 "><FaCrown className={`text-2xl text-main `} />Areas We Serve</div></div>
-          <div className=" mt-2 text-xl text-center" dangerouslySetInnerHTML={{ __html: contentData.areaweserveSection.description }}> 
-            
-          </div>
-          <div className="flex justify-center">
-          <Link href={`${ContactInfo?.baseUrl}locations`} className=" font-bold text-main hover:tracking-wide ease-in duration-150 text-xl text-center ">{contentData.areaweserveSection.linkText}</Link>
-          </div>
-          
-          
-
-        </div> */}
-        {/* all */}
-        {/* -----------------------------------------Our Mission Start------------------------ */}
-        {/* <div className="flex-col md:flex md:flex-row border  md:mx-8 mx-4 py-4 rounded-lg gap-6 mt-10 mb-10 md:px-8 px-4">
-          <div className="md:w-1/4">
-            <img
-              src="/our-mission-ideas.jpeg"
-              className="border rounded-lg shadow-lg "
-              alt="Star Dryer Vent Cleaning"
-            />
-          </div>
-          <div className="mt-2 md:mt-0 flex flex-col justify-center  w-full gap-3 ">
-            <div className="text-2xl font-bold">Our Mission</div>
-            <div className="md:mt-3 mt-2 text-base">
-              Our mission is to provide top-tier dryer vent cleaning services focused on safety, efficiency, and customer satisfaction. We strive for excellence in every service, using eco-friendly methods to enhance your home or business while ensuring a smooth and professional experience.
-            </div>
-          </div>
-        </div> */}
-        {/* -----------------------------------------Our Mission End------------------------ */}
       </div>
     </div>
   );
