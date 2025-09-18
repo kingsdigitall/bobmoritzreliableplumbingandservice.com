@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const AreaWeServe = ({ slugs }: any) => {
   const [showAll, setShowAll] = useState(false);
-  const initialCount = 30;
+  const initialCount = 12;
 
   const handleReadMore = () => {
     setShowAll(true);
@@ -35,12 +35,13 @@ const AreaWeServe = ({ slugs }: any) => {
           );
         })}
       {!showAll && slugs.length > initialCount && (
+        <Link href="/areas-we-serve">
         <button
-          onClick={handleReadMore}
           className="mb-2 me-2 rounded-lg bg-minor px-5 py-2.5 text-xs font-medium text-white hover:bg-minor/90 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
         >
           View All
         </button>
+        </Link>
       )}
       {showAll && (
         <button
