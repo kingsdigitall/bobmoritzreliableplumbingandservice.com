@@ -10,5 +10,9 @@
   "location": "Citrus Heights, CA",
   "zipCode": "95621",
   "bannerImage": "https://ik.imagekit.io/serviceproviders/bobmoritzreliableplumbingandservice.com/banner.jpg?updatedAt=1743851766762",
-  "logo": "https://ik.imagekit.io/serviceproviders/bobmoritzreliableplumbingandservice.com/logo.png?updatedAt=1743851759358"
+  "logoImage": "https://ik.imagekit.io/serviceproviders/bobmoritzreliableplumbingandservice.com/logo.png?updatedAt=1743851759358",
+  "favicon": "",
+  "googleAnalytics": "",
+  "main": "#7ed2eb",
+  "minor": "#76c6dd"
 }
